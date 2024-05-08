@@ -1,4 +1,4 @@
-document.getElementById('button').addEventListener('click', function(event) {
+document.getElementById('button').addEventListener('click', function(event){
     event.preventDefault();
 
     const valorA = parseFloat(document.querySelector('#inputA').value);
@@ -10,7 +10,8 @@ document.getElementById('button').addEventListener('click', function(event) {
     if(valorB > valorA){
         perfeito.style.display = 'block';
         errado.style.display = 'none';
-    } else if(valorA > valorB){
+    }
+    else if(valorA > valorB){
         errado.style.display = 'block';
         perfeito.style.display = 'none';
     }
