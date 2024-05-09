@@ -10,10 +10,12 @@ document.getElementById('button').addEventListener('click', function(event){
     if(valorB > valorA){
         perfeito.style.display = 'block';
         errado.style.display = 'none';
+        pane.style.display = 'none';
     }
     else if(valorA > valorB){
         errado.style.display = 'block';
         perfeito.style.display = 'none';
+        pane.style.display = 'none';
     }
     else if(valorA == valorB){
         pane.style.display = 'block';
